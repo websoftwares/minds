@@ -1,0 +1,30 @@
+{
+    "name": "boris/minds",
+    "type": "project",
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^6.5",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Boris",
+            "email": "boris@websoftwar.es"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Minds\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Minds\\Test\\": "test/",
+            "Minds\\Test\\Integration\\": "test/integration"
+        }
+    }
+}
