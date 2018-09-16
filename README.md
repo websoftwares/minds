@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/websoftwares/minds/tree/master.svg?style=svg)](https://circleci.com/gh/websoftwares/minds/tree/master)
+[![Build Status](https://travis-ci.org/websoftwares/minds.svg?branch=master)](https://travis-ci.org/websoftwares/minds)
 
 # Beatles
 John, Paul, George and Ringo are planning to go on a magical mystery tour in their yellow submarine. In order
