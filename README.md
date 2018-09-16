@@ -49,7 +49,7 @@ In the `/test` folder u can find several tests run them with the following comma
 
 ### Integration tests
 
-In the `/test/integration` folder u can find several tests execute them with the following command from the project root folder `./integration-test.sh`
+In the `/test/integration` folder u can find several tests execute them with the following command from the project root folder `./test-integration.sh`
 
 ## License
 The [MIT](http://opensource.org/licenses/MIT "MIT") License (MIT).

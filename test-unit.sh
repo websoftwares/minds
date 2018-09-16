@@ -12,7 +12,7 @@ cleanup () {
 trap 'cleanup ; printf "${RED}Tests Failed For Unexpected Reasons${NC}\n"'\
   HUP INT QUIT PIPE TERM
 # build and run the composed services
-docker-compose -p ci -f docker-compose.yml -f docker-compose.test.yml up -d
+docker-compose -p ci -f docker-compose.yml -f docker-compose.unit.test.yml up -d
 if [ $? -ne 0 ] ; then
   printf "${RED}Docker Compose Failed${NC}\n"
   exit -1

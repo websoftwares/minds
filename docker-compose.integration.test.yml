@@ -5,6 +5,6 @@ services:
         - app
         - composer
       image: phpunit/phpunit:6.5.3
-      command: -v -c phpunit-integration.xml
+      command: -v -c phpunit.integration.xml
       volumes:
         - .:/app
