@@ -1,7 +1,15 @@
 sudo: required
 
+language: php
+
 services:
   - docker
+
+php:
+  - 7.2
+
+before_script:
+  - composer install --ignore-platform-reqs
 
 script:
   - ./test-unit.sh
