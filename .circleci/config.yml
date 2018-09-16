@@ -11,8 +11,8 @@ jobs:
     steps:
       - run: apk update && apk upgrade && apk add bash python python-dev py-pip build-base docker openrc
       - run: pip install docker-compose
-      - run: rc-update add docker boot
-      - run: service docker start
+#      - run: rc-update add docker boot
+#      - run: service docker start
       - run: docker ps
       - checkout
 
