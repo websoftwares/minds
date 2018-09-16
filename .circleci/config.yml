@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       - image: php:7.2-alpine
-    working_directory: ~/minds # directory where steps will run
+    working_directory: ~/app # directory where steps will run
     steps:
       - run: apk update && apk upgrade && apk add bash python python-dev py-pip
       - run: pip install docker-compose
