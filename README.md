@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/websoftwares/minds/tree/master.svg?style=svg)](https://circleci.com/gh/websoftwares/minds/tree/master)
+
 # Beatles
 John, Paul, George and Ringo are planning to go on a magical mystery tour in their yellow submarine. In order
 for all their friends to be aboard they need a system to find out where to find them.
