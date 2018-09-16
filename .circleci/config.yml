@@ -11,6 +11,7 @@ jobs:
     steps:
       - run: apk update && apk upgrade && apk add bash python python-dev py-pip build-base docker
       - run: pip install docker-compose
+      - run: service docker start && docker ps
       - checkout
 
       # Download and cache dependencies
