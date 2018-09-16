@@ -6,11 +6,8 @@ version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
-      image: php:7.2-alpine
-
-    working_directory: ~/minds
-
+      - image: php:7.2-alpine
+    working_directory: ~/minds # directory where steps will run
     steps:
       - checkout
 
