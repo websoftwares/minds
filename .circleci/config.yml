@@ -11,5 +11,5 @@ jobs:
     steps:
       - checkout
       # run tests!
-      - run: pwd && ./test-unit.sh
-      - run: pwd && ./test-integration.sh
+      - run: ls -la && ./test-unit.sh
+      - run: ls -la && ./test-integration.sh
