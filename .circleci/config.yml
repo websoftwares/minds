@@ -31,5 +31,5 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
 
       # run tests!
-      - run: phpunit -c phpunit.xml
+      - run: vendor/bin/phpunit -c phpunit.xml
       - run: ./integration-test.sh
