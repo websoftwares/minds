@@ -8,8 +8,10 @@ jobs:
     machine:
       docker_layer_caching: true
       image: circleci/classic:201808-01
+    working_directory: ~/minds # directory where steps will run
     steps:
       - checkout
+          path: ~/minds
       # run tests!
       - run: ./test-unit.sh
       - run: ./test-integration.sh
