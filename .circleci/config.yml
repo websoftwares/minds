@@ -9,11 +9,12 @@ jobs:
       - image: php:7.2-alpine
     working_directory: ~/minds # directory where steps will run
     steps:
-      - run: apk update && apk upgrade && apk add bash python python-dev py-pip build-base docker openrc
+      - run: apk update && apk upgrade && apk add bash python python-dev py-pip
       - run: pip install docker-compose
-      - run: rc-update add docker boot
-      - run: docker ps
       - checkout
+      - setup_remote_docker:
+                docker_layer_caching: true
+      - run: docker ps
 
       # Download and cache dependencies
       - restore_cache:
